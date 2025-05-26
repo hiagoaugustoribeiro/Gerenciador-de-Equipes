@@ -4,18 +4,18 @@ Este projeto é uma solução para o Desafio Front-end proposto pela ChipInvento
 
 ## Funcionalidades
 
-*   **Módulo Admin:**
+*   **Módulo Administrador:**
     *   Listagem de Empresas cadastradas.
     *   Criação, Edição e Exclusão (CRUD) de Empresas.
     *   Utiliza dados mockados através de um serviço Angular (`MockDataService`).
-*   **Módulo Company:**
+*   **Módulo Emnpresas:**
     *   Listagem de Projetistas cadastrados.
     *   Criação, Edição e Exclusão (CRUD) de Projetistas.
     *   Listagem de Equipes cadastradas.
     *   Criação, Edição e Exclusão (CRUD) de Equipes, permitindo a associação de Projetistas.
     *   Utiliza dados mockados através do mesmo serviço Angular (`MockDataService`).
 *   **Layout Responsivo:**
-    *   Interface adaptável a diferentes tamanhos de tela, utilizando Angular Material (Toolbar, Sidenav, Cards, Tabelas, Botões, Formulários, Diálogos).
+    *   Interface adaptável a diferentes tamanhos de tela, utilizando Angular Material (Toolbar, Sidenav, Cards, Tabelas, Botões, Formulários).
 *   **Navegação:**
     *   Menu lateral (Sidenav) para navegação entre os módulos Admin (Empresas) e Company (Projetistas, Equipes).
 
@@ -83,15 +83,15 @@ chip-inventor-app/
 
 ## Próximos Passos 
 
-*   Implementar persistência de dados real (backend em C# com API REST).
-*   Adicionar autenticação e autorização.
-*   Implementar testes unitários e de integração.
-*   Melhorar a gestão de estado (ex: NgRx, NGXS).
-*   Refinar a interface do usuário e a experiência do usuário (UX).
+*   Integração com backend real (C# REST API)
+*   Autenticação com controle de acesso
+*   Testes automatizados
+*   Melhorias em UX/UI e gestão de estado com NgRx
+
 
 ## 🔗 Acesse o Projeto Online
 
-A aplicação está publicada via GitHub Pages e pode ser acessada aqui:
+Deploy via GitHub Pages:
 
 👉 [Clique para acessar o Gerenciador de Equipes](https://hiagoaugustoribeiro.github.io/Gerenciador-de-Equipes/)
 
@@ -104,3 +104,4 @@ A aplicação está publicada via GitHub Pages e pode ser acessada aqui:
 ## Autor
 
 *   Hiago Augusto Ribeiro
+*   Desenvolvedor Full Stack em formação 
