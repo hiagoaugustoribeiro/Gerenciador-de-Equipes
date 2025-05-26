@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>{{ pageTitle }}</h2>
+
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="equipeForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nome da Equipe</mat-label>
+          <input matInput formControlName="nome" required>
+          <mat-error *ngIf="equipeForm.get('nome')?.hasError('required')">
+            Nome é obrigatório.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Descrição</mat-label>
+          <textarea matInput formControlName="descricao"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Projetistas</mat-label>
+          <mat-select formControlName="projetistaIds" multiple required>
+            <mat-option *ngFor="let projetista of projetistasDisponiveis$ | async" [value]="projetista.id">
+              {{ projetista.nome }}
+            </mat-option>
+          </mat-select>
+           <mat-error *ngIf="equipeForm.get('projetistaIds')?.hasError('required')">
+            Selecione ao menos um projetista.
+          </mat-error>
+        </mat-form-field>
+
+        
+
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" [disabled]="equipeForm.invalid">
+            {{ isEditMode ? 'Atualizar' : 'Salvar' }}
+          </button>
+          <button mat-stroked-button type="button" (click)="cancel()">Cancelar</button>
+        </div>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
