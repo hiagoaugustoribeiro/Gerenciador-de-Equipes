@@ -81,13 +81,20 @@ chip-inventor-app/
     ```
     A aplicação estará disponível em `http://localhost:4200/` (ou outra porta, se a 4200 estiver ocupada).
 
-## Próximos Passos (Sugestões)
+## Próximos Passos 
 
 *   Implementar persistência de dados real (backend em C# com API REST).
 *   Adicionar autenticação e autorização.
 *   Implementar testes unitários e de integração.
 *   Melhorar a gestão de estado (ex: NgRx, NGXS).
 *   Refinar a interface do usuário e a experiência do usuário (UX).
+
+## 🔗 Acesse o Projeto Online
+
+A aplicação está publicada via GitHub Pages e pode ser acessada aqui:
+
+👉 [Clique para acessar o Gerenciador de Equipes](https://hiagoaugustoribeiro.github.io/Gerenciador-de-Equipes/)
+
 
 ## Interface da Aplicação
 ![Formulario de Cadastro](https://github.com/user-attachments/assets/ca525111-32db-46b4-883f-50ac58ffabbe)
